@@ -11,40 +11,56 @@ proporcionando flexibilidade e facilidade de uso tanto para desenvolvedores quan
 
 # Tecnologias Utilizadas para Desenvolver o Projeto
 
-## Backend
+#### Backend
 
 - **PHP**: Linguagem de programação escolhida para o desenvolvimento do backend.
 - **Laravel**: Framework PHP utilizado para organizar e acelerar o desenvolvimento do backend. Ele fornece uma estrutura robusta para a criação de APIs RESTful, entre outras funcionalidades.
-
+- **OMR**: Laravel inclui Eloquent, um mapeador objeto-relacional (ORM),além de recuperar registros da tabela de banco de dados, os modelos Eloquent permitem inserir, atualizar e excluir registros da tabela também.
+- 
 #### Banco de Dados
 
 - **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional usado para armazenar e gerenciar os dados das entidades "Produtos" e "Categorias". Ele oferece alta confiabilidade, escalabilidade e segurança.
 
-## Ferramentas e Bibliotecas
+#### Ferramentas e Bibliotecas
 
 - **Composer**: Gerenciador de dependências para PHP, utilizado para gerenciar as bibliotecas e pacotes necessários para o projeto.
 - **Postman**: Ferramenta de teste de API utilizada para testar e documentar as endpoints da API durante o desenvolvimento.
 
-## Práticas de Desenvolvimento
+#### Práticas de Desenvolvimento
 
 - **Migrations**: Utilizado para gerenciar as alterações no esquema do banco de dados de forma organizada e versionada.
 - **Seeders**: Permite popular o banco de dados com dados de amostra ou iniciais, facilitando o desenvolvimento e testes.
-- **Controllers, Models e Rotas**: Estruturas de código organizadas para separar a lógica de negócios, a interação com o banco de dados e a definição de rotas de acesso à API.
+- **Controllers,Services,Models e Rotas**: Estruturas de código organizadas para separar a lógica de negócios, a interação com o banco de dados e a definição de rotas de acesso à API.
 
-## Versionamento e Controle de Versão
+#### Versionamento e Controle de Versão
 
 - **Git**: Sistema de controle de versão utilizado para rastrear as alterações no código-fonte durante o desenvolvimento.
 - **GitHub**: Plataforma de hospedagem de código-fonte utilizada para colaboração e compartilhamento do projeto.
 
-Este projeto foi desenvolvido seguindo as melhores práticas de codificação e design, focando na manutenibilidade, escalabilidade e segurança.
+## 🚀 Como Iniciar a Aplicação
 
+Siga as etapas abaixo para configurar e iniciar o projeto:
+
+### Pré-requisitos
+
+- PHP 8.2 ou superior
+- Composer
+- PostgreSQL
+
+### Passos para Configuração
+
+1. **Clone o Repositório**
+
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd teste-motocaSystems-backEnd
+
+### Documentação
+Ferramenya utilizada: Postman para testar e documentar as suas APIs. Disponível no link
 
 ## 🛠️ Funcionalidades
 
 A aplicação deve inclui as seguintes operações CRUD para as entidades "Produtos" e "Categorias":
-
-### Documentação
-Ferramenya utilizada: Postman para testar e documentar as suas APIs. Disponível no link
 
 ### Produtos
 
@@ -97,21 +113,4 @@ Ferramenya utilizada: Postman para testar e documentar as suas APIs. Disponível
 
 
 
-## 🚀 Como Iniciar a Aplicação
 
-Siga as etapas abaixo para configurar e iniciar o projeto:
-
-### Pré-requisitos
-
-- PHP 8.2 ou superior
-- Composer
-- PostgreSQL
-- Docker (opcional, mas recomendado)
-
-### Passos para Configuração
-
-1. **Clone o Repositório**
-
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd teste-motocaSystems-backEnd
