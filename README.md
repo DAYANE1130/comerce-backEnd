@@ -186,6 +186,7 @@ A aplicação deve inclui as seguintes operações CRUD para as entidades "Produ
 
 ## Melhorias Futuras
 - Implementação de testes unitários e de integração.
+- Configuração do docker compose
 
 
 
