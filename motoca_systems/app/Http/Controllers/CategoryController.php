@@ -59,7 +59,11 @@ class CategoryController extends Controller
     {
         try {
             $responseService =  $this->categoryService->updateCategory($id, $request->all());
-            return response()->json([$responseService,'message' => 'Category updated sucessfull']);
+            $response = [
+                'name' => $responseService['name'],
+                'message' => 'Category updated successfully'
+            ];
+            return response()->json($response);
         } catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()], 400);
         }
