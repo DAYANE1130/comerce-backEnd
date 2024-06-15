@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreProductRequest;
 use Illuminate\Http\Request;
 use App\Services\ProductService;
 
@@ -12,7 +13,7 @@ class ProductController extends Controller
     {
         $this->productService = $productService;
     }
-/**
+    /**
      * Display a listing of the resource.
      */
 
@@ -33,10 +34,16 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
-        //
+        try {
+            $category = $this->productService->createProduct($request->all());
+            return response()->json($category, 201);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 400);
+        }
     }
+
 
     /**
      * Display the specified resource.

@@ -13,12 +13,19 @@ class ProductService
     return ProductModel::all();
   }
 
+  public function createProduct(array $data)
+  {
+    $product = ProductModel::create($data);
+    $product->makeHidden(['created_at', 'updated_at']);
+    return  $product;
+  }
+
   public function getProductById($id)
   {
-      $category = ProductModel::find($id);
-      if (!$category) {
-          throw new \Exception("The product with id '{$id}' no exist.");
-      }
-      return $category;
+    $product = ProductModel::find($id);
+    if (!$product) {
+      throw new \Exception("The product with id '{$id}' no exist.");
+    }
+    return $product;
   }
 }
