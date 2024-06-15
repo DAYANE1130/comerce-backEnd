@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\ProductRequest;
 use Illuminate\Http\Request;
 use App\Services\ProductService;
 
@@ -22,23 +22,14 @@ class ProductController extends Controller
         $responseService = $this->productService->getAllProducts();
         return response()->json($responseService);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProductRequest $request)
+    public function store(ProductRequest $request)
     {
         try {
-            $category = $this->productService->createProduct($request->all());
-            return response()->json($category, 201);
+            $responseService = $this->productService->createProduct($request->all());
+            return response()->json($responseService, 201);
         } catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()], 400);
         }
@@ -58,19 +49,16 @@ class ProductController extends Controller
         }
     }
     /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(ProductRequest $request, string $id)
     {
-        //
+        try {
+            $responseService =  $this->productService->updateProduct($id, $request->all());
+            return response()->json($responseService);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 400);
+        }
     }
 
     /**
@@ -78,6 +66,11 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        try {
+            $this->productService->deleteProduct($id);
+            return response()->json(['message' => 'Product deleted sucessfull']);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 400);
+        }
     }
 }

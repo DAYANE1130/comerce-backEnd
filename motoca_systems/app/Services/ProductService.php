@@ -28,4 +28,17 @@ class ProductService
     }
     return $product;
   }
+  public function updateProduct($id, array $data)
+  {
+    $existingProduct = $this->getProductById($id);
+    $existingProduct->update($data);
+    $updatedProduct = $existingProduct->makeHidden(['created_at', 'updated_at']);
+    return   $updatedProduct;
+  }
+
+  public function deleteProduct($id)
+  {
+    $existingCategory = $this->getProductById($id);
+    return   $existingCategory->delete();
+  }
 }
