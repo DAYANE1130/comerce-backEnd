@@ -54,6 +54,49 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
    ```bash
    git clone <URL_DO_REPOSITORIO>
    cd teste-motocaSystems-backEnd
+   ```
+
+
+2. Instale as Dependências
+
+    Use o Composer para instalar as dependências do projeto:
+
+    composer install
+
+3.  Configure o Arquivo .env
+
+    Copie o arquivo de exemplo .env.example para .env:
+```
+    cp .env.example .env
+```
+
+4. Abra o arquivo .env em um editor de texto e configure as variáveis de ambiente conforme necessário:
+```
+    DB_CONNECTION=pgsql
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_DATABASE=motoca
+    DB_USERNAME=seu_usuario
+    DB_PASSWORD=sua_senha
+```
+
+5. Certifique-se de substituir seu_usuario e sua_senha pelas credenciais do seu banco de dados PostgreSQL.
+
+
+6.   Execute as migrations e seeders para criar e povoar o banco de dados:
+
+   ``` php artisan migrate --seed ```
+
+7-  Inicie o Servidor
+
+    Inicie o servidor de desenvolvimento do Laravel:
+
+   ``` php artisan serve ```
+
+O servidor será iniciado e você poderá acessar a aplicação em http://localhost:8000.
+
+
+   
 
 ### Documentação
 Ferramenya utilizada: Postman para testar e documentar as suas APIs. Disponível no link
