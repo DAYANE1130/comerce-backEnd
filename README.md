@@ -55,9 +55,9 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
    git clone https://github.com/DAYANE1130/teste-motocaSystems-backEnd.git
  
    ```
-```
+  ```
   cd teste-motocaSystems-backEnd
-```
+  ```
 
 2. Instale as Dependências
 
@@ -73,19 +73,19 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
 
     Copie o arquivo de exemplo .env.example para .env:
     
-```
-    cp .env.example .env
-```
+   ```
+      cp .env.example .env
+   ```
 
 4. Abra o arquivo .env em um editor de texto e configure as variáveis de ambiente conforme necessário:
-```
+   ```
     DB_CONNECTION=pgsql
     DB_HOST=127.0.0.1
     DB_PORT=5432
     DB_DATABASE=motoca
     DB_USERNAME=seu_usuario
     DB_PASSWORD=sua_senha
-```
+   ```
 
 5. Certifique-se de substituir seu_usuario e sua_senha pelas credenciais do seu banco de dados PostgreSQL.
 
