@@ -176,11 +176,16 @@ A aplicação deve inclui as seguintes operações CRUD para as entidades "Produ
    - Rota: `DELETE /api/categorias/{id}`
    - Deleta uma categoria específica.
 
+
 ### Relacionamento Produto-Categoria
 
 - Cada produto pertence a uma categoria (`categoria_id` como chave estrangeira na tabela `produtos`).
 - Cada categoria pode ter vários produtos.
 
+
+
+## Melhorias Futuras
+- Implementação de testes unitários e de integração.
 
 
 
