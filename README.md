@@ -16,7 +16,7 @@ proporcionando flexibilidade e facilidade de uso tanto para desenvolvedores quan
 - **PHP**: Linguagem de programação escolhida para o desenvolvimento do backend.
 - **Laravel**: Framework PHP utilizado para organizar e acelerar o desenvolvimento do backend. Ele fornece uma estrutura robusta para a criação de APIs RESTful, entre outras funcionalidades.
 
-## Banco de Dados
+#### Banco de Dados
 
 - **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional usado para armazenar e gerenciar os dados das entidades "Produtos" e "Categorias". Ele oferece alta confiabilidade, escalabilidade e segurança.
 
