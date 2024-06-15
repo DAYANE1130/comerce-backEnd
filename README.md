@@ -9,7 +9,7 @@ permitindo que os usuários interajam com esses dados através de solicitações
 As operações CRUD são fundamentais para a manipulação de dados em aplicações web modernas, 
 proporcionando flexibilidade e facilidade de uso tanto para desenvolvedores quanto para consumidores finais da API
 
-## Tecnologias Utilizadas para Desenvolver o Projeto
+## 🚀 Tecnologias Utilizadas para Desenvolver o Projeto
 
 #### Backend
 
@@ -100,7 +100,11 @@ O servidor será iniciado e você poderá acessar a aplicação em http://localh
 
 
 
-## Documentação
+
+
+
+
+##  📄 Documentação
 Ferramenya utilizada: Postman para testar e documentar as suas APIs. Disponível no link
 
 
