@@ -47,21 +47,26 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
 - Composer
 - PostgreSQL
 
-####Passos para Configuração
+#### Passos para Configuração
 
 1. **Clone o Repositório**
 
    ```bash
    git clone https://github.com/DAYANE1130/teste-motocaSystems-backEnd.git
-   cd teste-motocaSystems-backEnd
+ 
    ```
-
+```
+  cd teste-motocaSystems-backEnd
+```
 
 2. Instale as Dependências
 
     Use o Composer para instalar as dependências do projeto:
 
-    composer install
+
+   ```
+   composer install
+   ```
    
 
 4.  Configure o Arquivo .env
@@ -93,11 +98,14 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
 
 7-  Inicie o Servidor
 
-    Inicie o servidor de desenvolvimento do Laravel:
+   Inicie o servidor de desenvolvimento do Laravel:
 
    ```
    php artisan serve
    ```
+
+
+
 
 O servidor será iniciado e você poderá acessar a aplicação em http://localhost:8000.
 
