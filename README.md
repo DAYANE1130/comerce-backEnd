@@ -52,7 +52,7 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
 1. **Clone o Repositório**
 
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/DAYANE1130/teste-motocaSystems-backEnd.git
    cd teste-motocaSystems-backEnd
    ```
 
@@ -62,10 +62,12 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
     Use o Composer para instalar as dependências do projeto:
 
     composer install
+   
 
-3.  Configure o Arquivo .env
+4.  Configure o Arquivo .env
 
     Copie o arquivo de exemplo .env.example para .env:
+    
 ```
     cp .env.example .env
 ```
@@ -85,13 +87,17 @@ Siga as etapas abaixo para configurar e iniciar o projeto:
 
 6.   Execute as migrations e seeders para criar e povoar o banco de dados:
 
-   ``` php artisan migrate --seed ```
+   ``` 
+   php artisan migrate --seed
+   ```
 
 7-  Inicie o Servidor
 
     Inicie o servidor de desenvolvimento do Laravel:
 
-   ``` php artisan serve ```
+   ```
+   php artisan serve
+   ```
 
 O servidor será iniciado e você poderá acessar a aplicação em http://localhost:8000.
 
@@ -105,6 +111,8 @@ O servidor será iniciado e você poderá acessar a aplicação em http://localh
 
 
 ##  📄 Documentação
+
+
 Ferramenya utilizada: Postman para testar e documentar as suas APIs. Disponível no link
 
 
