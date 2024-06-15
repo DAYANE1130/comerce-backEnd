@@ -119,9 +119,8 @@ O servidor será iniciado e você poderá acessar a aplicação em http://localh
 
 
 ##  📄 Documentação
-
-
-Ferramenya utilizada: Postman para testar e documentar as suas APIs. Disponível no link
+ Disponível em https://documenter.getpostman.com/view/31041446/2sA3XQhhPm
+ Documenta cada endpoint da API no Postman estáincluindo descrições, exemplos de solicitações e respostas, e       quaisquer parâmetros ou cabeçalhos relevantes.
 
 
 
